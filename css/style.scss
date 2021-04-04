@@ -1,0 +1,92 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 927px,
+  xl: 927px,
+  xxl: 927px
+);
+
+$border-radius:.60rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//Primary Color
+$Color-Bright-orange: hsl(31, 77%, 52%);
+$Color-Dark-cyan: hsl(184, 100%, 22%);
+$Color-Very-dark-cyan: hsl(179, 100%, 13%);
+
+//Neutral
+
+$Color-Transparent-white: hsla(0, 0%, 100%, 0.75); //(paragraphs)
+$Color-Very-light-gray: hsl(0, 0%, 95%); //(background, headings, buttons)
+
+@media (min-width: 992px) {
+    .alto-100 {
+      height: 100vh;
+    }
+  }
+
+body{
+    font-size: 15px;
+}
+
+.row > *{
+    padding: 0 ;
+}
+
+.first-card{
+    background-color: $Color-Bright-orange;
+    button{
+        &:hover{
+            color: $Color-Bright-orange;
+        }
+    }
+}
+.second-card{
+    background-color: $Color-Dark-cyan;
+    button{
+        &:hover{
+            color: $Color-Dark-cyan;
+        }
+    }
+}
+.third-card{
+    background-color: $Color-Very-dark-cyan;
+    button{
+        &:hover{
+            color: $Color-Very-dark-cyan;
+        }
+    }
+}
+
+.card{
+    // Medium devices (tablets, 768px and down)
+    @media (max-width: 768px) { 
+        border-radius: 0 !important;
+    }
+    padding: 50px;
+    color: white;
+    img{
+        width: 65px;
+    }
+
+    &-title{
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 35px;
+    }
+
+    &-body{
+        padding-left: 0;
+        padding-right: 0;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    &-footer{
+        padding: 0 !important;
+        background-color: transparent;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
