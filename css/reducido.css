@@ -198,6 +198,12 @@ button:not(:disabled),
             flex: 0 0 auto;
     width: 33.33333%;
   }
+  .col-md-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+  }
 }
 
 .btn {
@@ -401,6 +407,10 @@ button:not(:disabled),
 
 .mt-5 {
   margin-top: 3rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
 }
 
 /* rtl:begin:remove */
